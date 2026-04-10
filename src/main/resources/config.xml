@@ -5,5 +5,5 @@
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="vehicle" class="org.mahanth.Car"></bean>
+    <bean id="vehicle" class="org.mahanth.Bike"></bean>
 </beans>

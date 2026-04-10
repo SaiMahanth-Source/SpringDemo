@@ -23,9 +23,13 @@ public class App
          else we need to type cast with the corresponding applicable type to hold the reference
          */
 //        Vehicle vehicle3 = applicationContext.getBean(Bus.class);
-
-        vehicle1.drive();
 //        vehicle2.drive();
 //        vehicle3.drive();
+
+        vehicle1.drive();
+        TwoWheeler vehicle2 = (TwoWheeler) vehicle1; // We can do it by performing down casting
+        vehicle2.drive();
+        vehicle2.ride();
+
     }
 }
