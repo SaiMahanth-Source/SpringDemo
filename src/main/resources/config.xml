@@ -5,5 +5,17 @@
        xsi:schemaLocation="
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="vehicle" class="org.mahanth.Bike"></bean>
+<!--    <bean id="vehicle" class="org.mahanth.Car"></bean>-->
+<!--    <bean id="vehicle" class="org.mahanth.Bus"></bean>-->
+<!--    <bean id="vehicle" class="org.mahanth.Bike"></bean>-->
+
+    <bean id="tyre" class="org.mahanth.Tyre">
+        <!--    Setter injection-->
+<!--        <property name="brand" value="BridgeStone"></property>-->
+        <!--    Constructor injection-->
+        <constructor-arg index="0" value="MRF"></constructor-arg>
+        <constructor-arg index="1" value="2021"></constructor-arg>
+    </bean>
+
 </beans>
+

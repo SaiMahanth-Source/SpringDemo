@@ -15,7 +15,7 @@ public class App
         load all the configuration so whenever we call for vehicle we will get the car if bean is car
          */
 
-        Vehicle vehicle1 = (Vehicle) applicationContext.getBean("vehicle");
+//        Vehicle vehicle1 = (Vehicle) applicationContext.getBean("vehicle");
         // Bean name should match the bean id in the config file
 //        Vehicle vehicle2 = applicationContext.getBean(Car.class);
         /*
@@ -26,10 +26,13 @@ public class App
 //        vehicle2.drive();
 //        vehicle3.drive();
 
-        vehicle1.drive();
-        TwoWheeler vehicle2 = (TwoWheeler) vehicle1; // We can do it by performing down casting
-        vehicle2.drive();
-        vehicle2.ride();
+//        vehicle1.drive();
+//        TwoWheeler vehicle2 = (TwoWheeler) vehicle1; // We can do it by performing down casting
+//        vehicle2.drive();
+//        vehicle2.ride();
+
+        Tyre tyre = (Tyre) applicationContext.getBean("tyre");
+        System.out.println(tyre);
 
     }
 }
